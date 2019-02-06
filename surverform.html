@@ -1,0 +1,60 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div class="container">
+<h1 id="title">Survey form Researches</h1>
+<p id="description">----Please fill in the information----</p>
+<h3><span class="required">*</span> Plague Science Research</h3>
+<form id="survey-form" method="POST">
+  <div id="borders">
+  <label id="name-label">Full name <span class="required">*</span></label><br>
+  <input id="name" type="text" name="full_name" placeholder="First and Last" autofocus="autofocus" value="" required><br>  
+  </div>
+  <div id="borders">
+  <label id="email-label">Contact Email <span class="required">*</span></label><p id="description">Please provide a valid email, in case we need to contact you by email.</p>
+   <input id="email"type="email" name="email"  placeholder="Enter a valid email address" required><br>
+  </div>
+  <div id="borders">
+  <label id="gender-type">Gender <span class="required">*</span></label><br>	
+   <select id="dropdown" name="gender" required>
+   <option value="" disabled selected style="display: none;">Choose your Gender</option>
+  <option value="Female">Female</option>
+  <option value="Male">Male</option>
+   </select><br>
+  </div>
+  <div id="borders">
+        <label id="number-label">Age <span class="required">*</span></label><br>
+  <input id="number" type="number"size="6" name="age" min="18" max="99" value="" placeholder="Age" required><br>
+  </div>
+  <div id="borders">
+ <label id="recomm">Do You Like Some Research?</label><br>
+    <input type="radio" id="Choice1"
+     name="radio-buttons" value="Definitely">
+    <label for="Choice1">Definitely</label> <br>
+
+    <input type="radio" id="Choice2"
+     name="radio-buttons" value="Maybe">
+    <label for="Choice2">Maybe</label><br>
+
+    <input type="radio" id="Choice3"
+    name="radio-buttons" value="Not Sure">
+    <label for="Choice3">Not Sure</label>
+  </div>
+   <label id="recomm">Do You Want Become The Researches?</label><br>
+
+    <input type="radio" id="Choice1"
+     name="radio-buttons" value="Maybe">
+    <label for="Choice1">Maybe</label><br>
+
+    <input type="radio" id="Choice2"
+    name="radio-buttons" value="Not Sure">
+    <label for="Choice2">Not Sure</label>
+  </div>
+  
+   <label id="add-comm">Your Want Become Research:</label><br>
+   <textarea type="text"  placeholder="Fill Up Your Want....."></textarea><br>
+
+  <div align="center">
+  <button id="submit"type="submit" class="btn btn-large btn-primary" name="submit">Sumbit</button>
+  </div>
+</form>
+</div>
